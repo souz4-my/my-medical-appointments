@@ -7,12 +7,13 @@ export const theme: DefaultTheme = {
 	},
 	colors: {
 		background: {
-			primary: '#070060',
+			primary: '#1c0aec',
 			secondary: '#ffffff',
 		},
 		text: {
-			primary: '#2A2829',
+			primary: '#2a2829',
 			secondary: '#ffffff',
+			emphasis: '#1c0aec',
 		},
 	}
 }

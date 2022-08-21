@@ -7,13 +7,14 @@ declare module 'styled-components' {
 			emphasis: string
 		}
 		colors: {
-			background: {
-				primary: string
+      background: {
+        primary: string
 				secondary: string
 			}
 			text: {
-				primary: string
+        primary: string
 				secondary: string
+        emphasis: string
 			}
 		}
 	}
