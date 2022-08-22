@@ -15,6 +15,8 @@ export const HomePage = () => {
 
     if (response.status === 201) {
       toast.success("Seu lembrete foi cadastrado com sucesso.");
+    } else if (response.status === 422) {
+      toast.warning(response.data.message);
     } else {
       toast.error("Erro ao cadastrar lembrete.");
     }

@@ -1,7 +1,8 @@
 {
-  "name": "my-medical-appointments",
+  "name": "my-medical-appointments-frontend",
   "version": "1.0.0",
   "private": true,
+  "repository": "https://github.com/souz4-my/my-medical-appointments-frontend.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
