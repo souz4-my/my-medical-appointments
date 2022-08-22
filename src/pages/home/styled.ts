@@ -20,4 +20,8 @@ export const Header = styled.h1`
 export const SubHeader = styled.h4`
   font-weight: normal;
   width: 100%;
+  `
+
+export const Form = styled.form`
+  width: 100%;
 `
