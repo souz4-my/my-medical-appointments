@@ -2,6 +2,7 @@ import { Button } from 'components/button'
 import { TextField, DateField, TextareaField } from 'components/fields'
 import { axiosClient } from 'config/axios'
 import { ChangeEvent, FormEvent, useState } from 'react'
+import { toast } from 'react-toastify'
 import { Container, Form, Header, SubHeader } from './styled'
 
 export const HomePage = () => {
@@ -12,7 +13,11 @@ export const HomePage = () => {
     
     const response = await axiosClient().post('/appointment', appointmentData)
 
-    console.log(response)
+    if (response.status === 201) {
+      toast.success("Seu lembrete foi cadastrado com sucesso.");
+    } else {
+      toast.error("Erro ao cadastrar lembrete.");
+    }
   }
 
   return (
